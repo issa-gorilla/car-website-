@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — HEIL AUTOBAHN HAUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">HEIL AUTOBAHN<span>HAUS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Models</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="products.html" class="nav-cta">View Models</a>
+    <button class="nav-hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Models</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1800&q=80')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Get in Touch</span>
+      <h1>CONTACT<br>US</h1>
+    </div>
+  </section>
+
+  <div class="contact-wrapper">
+    <div class="contact-sidebar" data-reveal>
+      <span class="section-label" style="margin-bottom:1.5rem">Find Us</span>
+      <h2>LET'S TALK<br>MACHINES</h2>
+      <p>Whether you're enquiring about a model, need expert advice, or just want to talk all things German performance — we're here.</p>
+      <div class="contact-details">
+        <div><div class="contact-detail-label">Address</div><div class="contact-detail-val">1 Autobahn Strasse<br>Trafalgar Square , London, UK</div></div>
+        <div><div class="contact-detail-label">Phone</div><div class="contact-detail-val">+44 (0)20 1234 5678</div></div>
+        <div><div class="contact-detail-label">Email</div><div class="contact-detail-val">info@autobahnhaus.com</div></div>
+        <div><div class="contact-detail-label">Opening Hours</div><div class="contact-detail-val">Mon–Fri: 09:00 – 18:00<br>Sat: 10:00 – 16:00</div></div>
+      </div>
+    </div>
+    <div class="contact-main" data-reveal>
+      <span class="section-label" style="margin-bottom:1.5rem">Send a Message</span>
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name <span class="required-star">*</span></label>
+            <input type="text" id="firstName" name="firstName" required placeholder="e.g. Hans">
+            <span class="error-msg" id="firstNameError">First name is required.</span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name <span class="required-star">*</span></label>
+            <input type="text" id="lastName" name="lastName" required placeholder="e.g. Schmidt">
+            <span class="error-msg" id="lastNameError">Last name is required.</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email <span class="required-star">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="hans@example.com">
+            <span class="error-msg" id="emailError">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+44 7000 000000">
+            <span class="error-msg" id="phoneError">Please enter a valid phone number.</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="interest">Model Interest <span class="required-star">*</span></label>
+          <select id="interest" name="interest" required>
+            <option value="">— Select a Brand / Model —</option>
+            <optgroup label="Porsche"><option value="911gt3rs">Porsche 911 GT3 RS</option><option value="taycan">Porsche Taycan Turbo S</option></optgroup>
+            <optgroup label="Mercedes-AMG"><option value="amggt">Mercedes-AMG GT Black Series</option><option value="s63">Mercedes S 63 AMG</option></optgroup>
+            <optgroup label="Audi"><option value="r8">Audi R8 V10 Plus</option><option value="rs6">Audi RS6 Avant</option></optgroup>
+            <optgroup label="BMW M"><option value="m3">BMW M3 Competition</option><option value="m8">BMW M8 Competition</option></optgroup>
+            <option value="general">General Enquiry</option>
+          </select>
+          <span class="error-msg" id="interestError">Please select a model.</span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="required-star">*</span></label>
+          <textarea id="message" name="message" required placeholder="Tell us what you're looking for..."></textarea>
+          <span class="error-msg" id="messageError">Please enter a message.</span>
+        </div>
+        <div class="form-footer">
+          <span class="form-note">Fields marked <span>*</span> are required.</span>
+          <button type="submit" class="btn-primary">Send Enquiry →</button>
+        </div>
+      </form>
+      <div id="formSuccess">
+        <div class="success-icon">✓</div>
+        <h3>MESSAGE<br>RECEIVED</h3>
+        <p>Thank you. A specialist will respond within 24 hours.</p>
+        <a href="products.html" class="btn-ghost">Browse Models</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-section">
+    <div class="map-overlay-tag"><p>Our Showroom</p><span>Munich Quarter, London</span></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8193523427957!2d-0.12775848422919083!3d51.50329997963441!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604ce3941eb1f%3A0x1a5342fdf089c627!2sWestminster%2C%20London!5e0!3m2!1sen!2suk!4v1699999999999!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Location"></iframe>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo">HEIL AUTOBAHN<span>HAUS</span></div><p>Celebrating German automotive excellence since 2024.</p></div>
+      <div class="footer-links"><h4>Navigate</h4><a href="index.html">Home</a><a href="products.html">Models</a><a href="contact.html">Contact</a><a href="about.html">About</a></div>
+      <div class="footer-links"><h4>Brands</h4><a href="products.html">Porsche</a><a href="products.html">Mercedes-Benz</a><a href="products.html">Audi</a><a href="products.html">BMW</a></div>
+      <div class="footer-links"><h4>Contact</h4><a href="mailto:info@autobahnhaus.com">info@autobahnhaus.com</a><a href="contact.html">Get in Touch</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 Autobahn Haus. All rights reserved.</span><span>Made with precision.</span></div>
+  </footer>
+
+
+</body>
+</html>

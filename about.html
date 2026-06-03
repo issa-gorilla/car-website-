@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — HEIL AUTOBAHN HAUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">HEIL AUTOBAHN<span>HAUS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Models</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Enquire</a>
+    <button class="nav-hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Models</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1561361058-c24cecae35ca?w=1800&q=80')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Our Story</span>
+      <h1>ABOUT<br>HAUS</h1>
+    </div>
+  </section>
+
+  <section class="story-section">
+    <div class="story-text" data-reveal>
+      <span class="section-label">Who We Are</span>
+      <h2>BORN FROM<br>OBSESSION</h2>
+      <p>Autobahn Haus was founded on a single belief: German automobiles represent the highest achievement in human engineering. Not just transportation — philosophy cast in steel, aluminium, and carbon fibre.</p>
+      <p>We are a dedicated resource for enthusiasts, collectors, and curious minds who want to understand what makes Porsche, Mercedes-Benz, Audi, and BMW truly exceptional.</p>
+      <p>Every model we feature has been selected for its engineering significance, its driving character, and its place in the lineage of one of the great automotive nations on earth.</p>
+    </div>
+    <div class="story-img" data-reveal>
+      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80" alt="Porsche 911">
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <h2 data-reveal>A HISTORY OF<br>SPEED</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal><div class="timeline-year">1886</div><div class="timeline-content"><h3>The First Automobile</h3><p>Karl Benz patents the Benz Patent-Motorwagen — the world's first petrol-powered automobile.</p></div></div>
+      <div class="timeline-item" data-reveal><div class="timeline-year">1916</div><div class="timeline-content"><h3>BMW Founded</h3><p>Bayerische Motoren Werke established in Munich, beginning a century of precision motor engineering.</p></div></div>
+      <div class="timeline-item" data-reveal><div class="timeline-year">1931</div><div class="timeline-content"><h3>Porsche Established</h3><p>Ferdinand Porsche founds his engineering consultancy in Stuttgart — the seed that became the world's most successful sports car brand.</p></div></div>
+      <div class="timeline-item" data-reveal><div class="timeline-year">1963</div><div class="timeline-content"><h3>Porsche 911 Unveiled</h3><p>Frankfurt Motor Show witnesses the birth of the most iconic sports car ever made.</p></div></div>
+      <div class="timeline-item" data-reveal><div class="timeline-year">1984</div><div class="timeline-content"><h3>Audi Quattro Dominates</h3><p>Audi's quattro all-wheel-drive system revolutionises rally racing and road cars forever.</p></div></div>
+      <div class="timeline-item" data-reveal><div class="timeline-year">2024</div><div class="timeline-content"><h3>Autobahn Haus Launches</h3><p>We open our showroom — a celebration of everything Germany has contributed to the automotive world.</p></div></div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="brands-section-header" data-reveal>
+      <span class="section-label" style="margin-bottom:1rem">The Marques</span>
+      <h2>FOUR BRANDS.<br>ONE OBSESSION.</h2>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card" data-reveal><div class="brand-card-bg" style="background-image:url('https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=900&q=80')"></div><div class="brand-card-overlay"></div><div class="brand-card-content"><div class="brand-icon"></div><div class="brand-card-name">PORSCHE</div><p class="brand-card-text">From the original 356 to the electric Taycan, Porsche has never compromised on driving purity.</p><div class="brand-founded">Founded 1931 · Stuttgart, Germany</div></div></div>
+      <div class="brand-card" data-reveal><div class="brand-card-bg" style="background-image:url('https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=900&q=80')"></div><div class="brand-card-overlay"></div><div class="brand-card-content"><div class="brand-icon"></div><div class="brand-card-name">MERCEDES</div><p class="brand-card-text">The inventor of the automobile. Mercedes-Benz has defined luxury and performance for over 130 years.</p><div class="brand-founded">Founded 1926 · Stuttgart, Germany</div></div></div>
+      <div class="brand-card" data-reveal><div class="brand-card-bg" style="background-image:url('https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=900&q=80')"></div><div class="brand-card-overlay"></div><div class="brand-card-content"><div class="brand-icon"></div><div class="brand-card-name">AUDI</div><p class="brand-card-text">Vorsprung durch Technik. Audi's quattro heritage and screaming V10 engines speak for themselves.</p><div class="brand-founded">Founded 1909 · Ingolstadt, Germany</div></div></div>
+      <div class="brand-card" data-reveal><div class="brand-card-bg" style="background-image:url('https://images.unsplash.com/photo-1555215695-3004980ad54e?w=900&q=80')"></div><div class="brand-card-overlay"></div><div class="brand-card-content"><div class="brand-icon"></div><div class="brand-card-name">BMW</div><p class="brand-card-text">The Ultimate Driving Machine. BMW M Division has produced some of the greatest driver's cars ever made.</p><div class="brand-founded">Founded 1916 · Munich, Germany</div></div></div>
+    </div>
+  </section>
+
+  <section class="aboutme-section">
+    <div class="aboutme-img-wrap" data-reveal>
+      <img src="Snapchat-878507140.jpg" alt="Founder">
+    </div>
+    <div class="aboutme-text" data-reveal>
+      <span class="section-label">The Person Behind It</span>
+      <h2>ABOUT<br>ME</h2>
+      <p>I'm a lifelong car enthusiast who grew up with a poster of a Porsche 911 on my wall and a father who drove a BMW E30. German engineering has never just been about getting from A to B — for me, it's an obsession with craft, physics, and the pursuit of perfection.</p>
+      <p>After years of collecting, driving, and writing about German performance cars, I built Autobahn Haus as the definitive online resource for people who feel the same way.</p>
+      <p>I believe the best car is one that makes you feel something every single time you turn the key. German cars do that better than anyone else on earth.</p>
+      <div class="passion-list">
+        <span class="passion-tag">Porsche 911</span>
+        <span class="passion-tag">Track Days</span>
+        <span class="passion-tag">AMG V8s</span>
+        <span class="passion-tag">Nürburgring</span>
+        <span class="passion-tag">Naturally Aspirated</span>
+        <span class="passion-tag">Car Photography</span>
+      </div>
+      <span class="name-sig">ISSA GALERIYA</span>
+      <span class="role-sig">Founder, HEIL AUTOBAHN HAUS</span>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <h2 data-reveal>THE TEAM</h2>
+    <div class="team-grid">
+      <div class="team-card" data-reveal><img src="Snapchat-878507140.jpg" alt="Issa Galeriya"><div class="team-card-info"><div class="team-card-name">Issa Galeriya</div><div class="team-card-role">Founder & Lead Reviewer</div></div></div>
+      <div class="team-card" data-reveal><img src="1000072048.jpg" alt="Rayan safe "><div class="team-card-info"><div class="team-card-name">Rayan Safe </div><div class="team-card-role">Automotive Journalist</div></div></div>
+      <div class="team-card" data-reveal><img src="1000072052.jpg" alt="Safe Safe"><div class="team-card-info"><div class="team-card-name">Safe Safe</div><div class="team-card-role">Executive Assistant </div></div></div>
+      <div class="team-card" data-reveal><img src="1000072049.jpg" alt="Aamenah Pandore"><div class="team-card-info"><div class="team-card-name">Aamenah Pandore</div><div class="team-card-role">Technical Specialist</div></div></div>
+      <div class="team-card" data-reveal><img src="1000072060.jpg" alt="Tania Nathaniel"><div class="team-card-info"><div class="team-card-name">Tania Nathaniel</div><div class="team-card-role">Personal Car Door Opener </div></div></div>
+      <div class="team-card" data-reveal><img src="1000072059.jpg" alt="Ranika Rajj "><div class="team-card-info"><div class="team-card-name">Ranika Rajj </div><div class="team-card-role">Car sales assistant </div></div></div>
+      
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo">HEIL AUTOBAHN<span>HAUS</span></div><p>Celebrating German automotive excellence since 2026.</p></div>
+      <div class="footer-links"><h4>Navigate</h4><a href="index.html">Home</a><a href="products.html">Models</a><a href="contact.html">Contact</a><a href="about.html">About</a></div>
+      <div class="footer-links"><h4>Brands</h4><a href="products.html">Porsche</a><a href="products.html">Mercedes-Benz</a><a href="products.html">Audi</a><a href="products.html">BMW</a></div>
+      <div class="footer-links"><h4>Contact</h4><a href="mailto:info@autobahnhaus.com">info@autobahnhaus.com</a><a href="contact.html">Get in Touch</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 HEIL AUTOBAHN HAUS. All rights reserved.</span><span>Made with precision.</span></div>
+  </footer>
+
+  
+</body>
+</html>

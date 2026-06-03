@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HEIL AUTOBAHN HAUS — German Automotive Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">HEIL AUTOBAHN<span>HAUS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="products.html">Models</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="products.html" class="nav-cta">View Models</a>
+    <button class="nav-hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Models</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <p class="hero-tag">Munich · Stuttgart · Ingolstadt · Zuffenhausen</p>
+    <h1 class="hero-title">GERMAN<br><span>FURY</span></h1>
+    <p class="hero-sub">Where precision engineering meets untamed performance. The finest machines ever forged.</p>
+    <div class="hero-cta">
+      <a href="products.html" class="btn-primary">Explore Models</a>
+      <a href="about.html" class="btn-ghost">Our Story</a>
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div>Scroll</div>
+  </section>
+
+  <div class="brand-strip">
+    <div class="brand-strip-inner">
+      <span>Porsche</span><span>Mercedes-Benz</span><span>Audi</span><span>BMW</span>
+      <span>Volkswagen</span><span>Mercedes-Benz</span><span>Audi</span><span>BMW</span>
+      <span>Porsche</span><span>Mercedes-Benz</span><span>Audi</span><span>BMW</span>
+      <span>Volkswagen</span><span>Mercedes-Benz</span><span>Audi</span><span>BMW</span>
+      <span>Volkswagen</span><span>Mercedes-Benz</span><span>Audi</span><span>BMW</span>
+    </div>
+  </div>
+
+  <section class="intro">
+    <div class="intro-text" data-reveal>
+      <span class="section-label">Our Philosophy</span>
+      <h2>BUILT TO<br>DOMINATE</h2>
+      <p>German automotive engineering is not merely about transportation — it is the pursuit of perfection at every revolution of the engine. Every bolt, every curve, every line is deliberate.</p>
+      <p>At Autobahn Haus, we celebrate the marques that changed the world: Porsche, Mercedes-Benz, Audi, and BMW.</p>
+      <a href="about.html" class="btn-primary" style="margin-top:2.5rem;width:fit-content;">Learn More</a>
+    </div>
+    <div class="intro-img">
+      <img src="https://www.route59.be/wp-content/uploads/2022/11/DSC04268-HDR-67-scaled.jpg" alt="German engineering">
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat-item" data-reveal><div class="stat-num">5</div><div class="stat-label">Iconic Brands</div></div>
+    <div class="stat-item" data-reveal><div class="stat-num">130+</div><div class="stat-label">Years of Heritage</div></div>
+    <div class="stat-item" data-reveal><div class="stat-num">1000+</div><div class="stat-label">BHP on Tap</div></div>
+    <div class="stat-item" data-reveal><div class="stat-num">∞</div><div class="stat-label">Passion</div></div>
+  </section>
+
+  <section class="features">
+    <div class="features-header" data-reveal>
+      <h2>ICONIC<br>MACHINES</h2>
+      <a href="products.html" class="btn-ghost">View All Models →</a>
+    </div>
+    <div class="cards-grid">
+      <div class="card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80" alt="Porsche 911">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-brand">Porsche</div>
+          <div class="card-name">911 GT3 RS</div>
+          <div class="card-desc">523hp of naturally aspirated fury. The purest driving experience on earth.</div>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80" alt="Mercedes AMG">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-brand">Mercedes-AMG</div>
+          <div class="card-name">GT Black series</div>
+          <div class="card-desc">730hp twin-turbo beast. Nürburgring lap record holder.</div>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <img src="https://i.pinimg.com/736x/46/63/02/46630212ec0a980c40b44c1f27421512.jpg" alt="Audi R8">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-brand">Audi</div>
+          <div class="card-name">R8 V10 Plus</div>
+          <div class="card-desc">620hp mid-engine supercar with a naturally aspirated howl.</div>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <img src="https://www.dealndrive.com/Content/images/upload/67382-full.jpg" alt="BMW M3">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-brand">BMW</div>
+          <div class="card-name">M3</div>
+          <div class="card-desc">620hp mid-engine supercar with a naturally aspirated howl.</div>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <img src="https://media.gq-magazine.co.uk/photos/5e74910306bab00008958011/16:9/w_2560%2Cc_limit/20200320-VW-Electric-03.jpg" alt="VW Bus">
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-brand">VW</div>
+          <div class="card-name">Bus</div>
+          <div class="card-desc">The ultimate hot hatch. 249hp, DSG transmission, and a chassis that rewards the brave.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-band" data-reveal>
+    <div class="quote-mark">&ldquo;</div>
+    <div>
+      <p class="quote-text">If one does not fail at times, then one has not challenged himself.</p>
+      <p class="quote-attr">— Ferdinand Porsche, Founder</p>
+    </div>
+    <div class="quote-mark">&ldquo;</div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">HEIL AUTOBAHN<span>HAUS</span></div>
+        <p>Celebrating German automotive excellence since 2024.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <a href="index.html">Home</a>
+        <a href="products.html">Models</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-links">
+        <h4>Brands</h4>
+        <a href="products.html">Porsche</a>
+        <a href="products.html">Mercedes-Benz</a>
+        <a href="products.html">Audi</a>
+        <a href="products.html">BMW</a>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <a href="mailto:info@autobahnhaus.com">info@autobahnhaus.com</a>
+        <a href="contact.html">Get in Touch</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Autobahn Haus. All rights reserved.</span>
+      <span>Made with precision.</span>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

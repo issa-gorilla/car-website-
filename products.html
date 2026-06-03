@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Models — HEIL AUTOBAHN HAUS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">HEIL AUTOBAHN<span>HAUS</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html" class="active">Models</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Enquire</a>
+    <button class="nav-hamburger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Models</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://static.wixstatic.com/media/a3da66_065f0240eb5d40a1a2cd5d596526931a~mv2.png/v1/fill/w_568,h_378,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a3da66_065f0240eb5d40a1a2cd5d596526931a~mv2.png')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="section-label">Our Collection</span>
+      <h1>THE<br>MODELS</h1>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" onclick="filter('all',this)">All Models</button>
+    <button class="filter-btn" onclick="filter('porsche',this)">Porsche</button>
+    <button class="filter-btn" onclick="filter('mercedes',this)">Mercedes-AMG</button>
+    <button class="filter-btn" onclick="filter('audi',this)">Audi</button>
+    <button class="filter-btn" onclick="filter('bmw',this)">BMW</button>
+    <button class="filter-btn" onclick="filter('vw',this)">VW</button>
+  </div>
+
+  <section class="products-section">
+    <div class="section-title-bar" data-reveal>
+      <h2>ALL MODELS</h2>
+      <span class="count-tag" id="countTag">15 vehicles</span>
+    </div>
+    <div class="products-grid">
+      <div class="product-card" data-brand="porsche" data-reveal>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=800&q=80" alt="Porsche 911 GT3 RS"><span class="product-badge">Porsche</span></div>
+        <div class="product-info"><div class="product-brand">Porsche</div><div class="product-name">911 GT3 RS</div><p class="product-desc">The most track-focused road-legal 911 ever built. A naturally aspirated flat-six that screams to 9,000rpm.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">523hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.2s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">184mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="porsche" data-reveal>
+        <div class="product-img"><img src="https://www.electrive.com/media/2019/09/porsche-taycan-2019-002-min-1400x700.png.webp" alt="Porsche Taycan"><span class="product-badge">Porsche</span></div>
+        <div class="product-info"><div class="product-brand">Porsche</div><div class="product-name">Taycan Turbo S</div><p class="product-desc">Electric performance redefined. 761hp of instant torque in a silken luxury saloon from Zuffenhausen.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">761hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">2.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">161mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="porsche" data-reveal>
+        <div class="product-img"><img src="https://spots.ag/2024/11/06/porsche-718-cayman-gts-40-38a34-c502806112024190246_1.jpg" alt="718 Cayman GTS 4.0 "><span class="product-badge">Porsche</span></div>
+        <div class="product-info"><div class="product-brand">Porsche</div><div class="product-name">718 Cayman GTS 4.0</div><p class="product-desc">The ultimate driving machine. 395hp of naturally aspirated fury in a lightweight sports car.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">395hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">190mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="mercedes" data-reveal>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80" alt="Mercedes AMG GT"><span class="product-badge">Mercedes-AMG</span></div>
+        <div class="product-info"><div class="product-brand">Mercedes-AMG</div><div class="product-name">GT Black Series</div><p class="product-desc">730hp of twin-turbocharged fury. Nürburgring production car lap record holder.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">730hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.1s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">202mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="mercedes" data-reveal>
+        <div class="product-img"><img src="https://mir-s3-cdn-cf.behance.net/projects/404/09ead6219654253.Y3JvcCw3OTEsNjE5LDIwOSwxOTU.png" alt="Mercedes S63"><span class="product-badge">Mercedes-Benz</span></div>
+        <div class="product-info"><div class="product-brand">Mercedes-Benz</div><div class="product-name">S 63 AMG</div><p class="product-desc">The pinnacle of luxury sedans. Hand-built AMG V8 biturbo and impeccable presence.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">612hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">186mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="mercedes" data-reveal>
+        <div class="product-img"><img src="https://platinumet.co.uk/wp-content/uploads/Overview/Mercedes-G63-AMG-Black/Mercedes-G63-AMG-Black-Front-1.jpg" alt="Mercedes-Benz G-Class "><span class="product-badge">Mercedes-Benz</span></div>
+        <div class="product-info"><div class="product-brand">Mercedes-Benz</div><div class="product-name">G63</div><p class="product-desc">The ultimate off-road machine. 577hp, 4WD, and the ability to conquer any terrain.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">577hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">4.5s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">130mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="audi" data-reveal>
+        <div class="product-img"><img src="https://i.pinimg.com/736x/46/63/02/46630212ec0a980c40b44c1f27421512.jpg" alt="Audi R8"><span class="product-badge">Audi</span></div>
+        <div class="product-info"><div class="product-brand">Audi</div><div class="product-name">R8 V10 Plus</div><p class="product-desc">620hp of naturally aspirated V10 glory, quattro AWD, and an exhaust note that rewires your brain.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">620hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.1s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">205mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="audi" data-reveal>
+        <div class="product-img"><img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=800&q=80" alt="Audi RS6"><span class="product-badge">Audi</span></div>
+        <div class="product-info"><div class="product-brand">Audi</div><div class="product-name">RS6 Avant</div><p class="product-desc">The super-estate that demolishes supercars. 630hp, quattro AWD, and room for the dog.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">630hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">190mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="audi" data-reveal>
+        <div class="product-img"><img src="https://c4.wallpaperflare.com/wallpaper/146/911/592/audi-headlight-abbot-sportback-rs7-hd-wallpaper-preview.jpg" alt="Audi RS7 Sportback"><span class="product-badge">Audi</span></div>
+        <div class="product-info"><div class="product-brand">Audi</div><div class="product-name">RS7 Sportback</div><p class="product-desc">The Audi RS7 Sportback is a high-performance coupe. 621hp, quattro AWD.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">621hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">190mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="bmw" data-reveal>
+        <div class="product-img"><img src="https://www.dealndrive.com/Content/images/upload/67382-full.jpg" alt="BMW M3"><span class="product-badge">BMW M</span></div>
+        <div class="product-info"><div class="product-brand">BMW M</div><div class="product-name">M3 Competition</div><p class="product-desc">510hp inline-six, rear-wheel drive, and a chassis that rewards the brave. The definitive sports saloon.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">510hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.5s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">180mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="bmw" data-reveal>
+        <div class="product-img"><img src="https://www.autoworlddergisi.com/wp-content/uploads/2022/01/P90448592_highRes_bmw-m8-competition-c-1100x733.jpg" alt="BMW M8"><span class="product-badge">BMW M</span></div>
+        <div class="product-info"><div class="product-brand">BMW M</div><div class="product-name">M8 Competition</div><p class="product-desc">625hp grand touring devastation. Twin-turbo V8, xDrive AWD, and effortless autobahn authority.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">625hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.0s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">190mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="bmw" data-reveal>
+        <div class="product-img"><img src="https://i0.wp.com/www.tireexpresspa.com/wp-content/uploads/2020/03/bmw-i8-custom-wheels-wallpaper-64647-66839-hd-wallpapers-scaled.jpg?fit=1200%2C675&ssl=1" alt="BMW I8"><span class="product-badge">BMW M</span></div>
+        <div class="product-info"><div class="product-brand">BMW M</div><div class="product-name">I8</div><p class="product-desc">The BMW i8 is a revolutionary, eco-conscious plug-in hybrid sports car.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">374hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">4.4s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">155mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="vw" data-reveal>
+        <div class="product-img"><img src="https://www.thedrive.com/wp-content/uploads/2025/04/2025-VW-GOLF-GTI-27.jpg" alt="VW Golf GTI"><span class="product-badge">VW</span></div>
+        <div class="product-info"><div class="product-brand">VW</div><div class="product-name">Golf GTI</div><p class="product-desc">The ultimate hot hatch. 249hp, DSG transmission, and a chassis that rewards the brave.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">249hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">5.1s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">155mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="vw" data-reveal>
+        <div class="product-img"><img src="https://media.gq-magazine.co.uk/photos/5e74910306bab00008958011/16:9/w_2560%2Cc_limit/20200320-VW-Electric-03.jpg" alt="VW Bus"><span class="product-badge">VW</span></div>
+        <div class="product-info"><div class="product-brand">VW</div><div class="product-name">Bus</div><p class="product-desc">The ultimate hot hatch. 249hp, DSG transmission, and a chassis that rewards the brave.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">249hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">5.1s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">155mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+      <div class="product-card" data-brand="vw" data-reveal>
+        <div class="product-img"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/2008-07-12_Volkswagen_W12_Syncro_Concept_Goodwood.jpg" alt="Volkswagen W12"><span class="product-badge">VW</span></div>
+        <div class="product-info"><div class="product-brand">VW</div><div class="product-name">W12</div><p class="product-desc">The Volkswagen W12 (also known as the Nardò) is VW's most famous attempt at a supercar.</p></div>
+        <div class="product-specs"><div class="spec"><div class="spec-val">600hp</div><div class="spec-key">Power</div></div><div class="spec"><div class="spec-val">3.5s</div><div class="spec-key">0–60</div></div><div class="spec"><div class="spec-val">217mph</div><div class="spec-key">Top Speed</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo">HEIL AUTOBAHN<span>HAUS</span></div><p>Celebrating German automotive excellence since 2024.</p></div>
+      <div class="footer-links"><h4>Navigate</h4><a href="index.html">Home</a><a href="products.html">Models</a><a href="contact.html">Contact</a><a href="about.html">About</a></div>
+      <div class="footer-links"><h4>Brands</h4><a href="products.html">Porsche</a><a href="products.html">Mercedes-Benz</a><a href="products.html">Audi</a><a href="products.html">BMW</a></div>
+      <div class="footer-links"><h4>Contact</h4><a href="mailto:info@autobahnhaus.com">info@autobahnhaus.com</a><a href="contact.html">Get in Touch</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2024 Autobahn Haus. All rights reserved.</span><span>Made with precision.</span></div>
+  </footer>
+
+  
+</body>
+</html>
